@@ -20,7 +20,6 @@
 <!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
 <body class="en" data-duration="360">
 
-<!--Slide 1-->
   <main>
     <section class="slide welcome highlight">
       <h1><img class="logo-stacked" src="framework/img/klc-logo-stacked-white.png" alt="Ladies Learning Code logo">Welcome!</h1>
@@ -31,9 +30,8 @@
         <p><strong>Wifi:</strong> Wifi Network</p>
         <p><strong>Password:</strong> Wifi Password</p>
         <hr>
-
-
-    </div>
+        <!-- DIRECTIONS TO CREATE AN ACCOUNT -->
+      </div>
 
       <footer>
         <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
@@ -42,7 +40,6 @@
       </footer>
     </section>
 
-<!--Slide 2-->
     <section class="slide intro">
       <img class="logo" src="framework/img/klc-logo-white.png" alt="Ladies Learning Code logo">
       <h1 class="heading-bg">
@@ -54,10 +51,11 @@
         <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
         <li><a href="https://twitter.com/search?q=%23kidslearningcode&src=typd">#kidslearningcode</a></li>
       </ul>
-<!--
+      <!--
       <div class="sponsor">
         <p>In partnership with<br> <img src="framework/img/telus-logo-white.svg" alt="Telus"></p>
-      </div>-->
+      </div>
+      -->
       <footer>
         <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
         <p class="left">Content created by Kassandra Lenters &amp; Kat Barrett for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
@@ -65,37 +63,20 @@
       </footer>
     </section>
 
-<!--Slide 3-->
     <section class="slide title" data-markdown>
       <script type="text/template">
         #Introductions
       </script>
     </section>
 
-<!--Slide 4-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # Table of Contents
 
         <div class="table-of-contents"></div>
-
-          <!-- Intro + Example Projects + Guest Speaker (10am)
-
-        Project Ideation + Wireframing (10:15am)
-
-        Intro to HTML + CSS (10:45am)
-
-        Lunch (12:30pm)
-
-        Building time! (1:15pm)
-
-        Demos + Pushing Live (3:30pm) -->
-
        </script>
     </section>
 
-<!--Slide 5-->
-      <!-- Insert Agenda for the workshop -->
     <section class= "slide" data-markdown>
       <script type="text/template">
         #Agenda
@@ -111,7 +92,6 @@
       </script>
     </section>
 
-<!--Slide 6-->
     <section class="slide centered" data-markdown>
       <script type="text/template">
        ![Coders Code Banner](framework/img/workshop/scroll2.png)
@@ -121,14 +101,12 @@
       </script>
     </section>
 
-<!--Slide 7-->
     <section class="slide title" data-toc data-markdown>
      <script type="text/template">
        # What is Code?
      </script>
     </section>
 
-<!--Slide 8-->
     <section class="slide" data-markdown>
      <script type= "text/template">
        #Code is..
@@ -147,37 +125,25 @@
      </script>
     </section>
 
-<!--Slide 9-->
     <section class="slide title" data-markdown>
       <script type="text/template">
         # Today's Project
-        ## We're learning how to create generative art with Processing
+        ## We're learning how to create<br> generative art with Processing
       </script>
     </section>
 
-<!--Slide 10-->
-    <section class="slide centered" data-markdown>
-      <script type="text/template">
-        #Today's Project
-        <iframe src="https://www.openprocessing.org/sketch/254313/embed/" width="500" height="500"></iframe>
-
-      </script>
-    </section>
-
-<!--Slide 11-->
     <section class="slide title" data-toc data-markdown>
       <script type="text/template">
         # What is Generative Art?
       </script>
     </section>
 
-<!--Slide 12-->
     <section class="slide" data-markdown>
       <script type="text/template">
         # Generative Art
 
         * Artwork that is created with code
-        * Uses mathematical operations
+        * Often uses mathematical operations `+ - * /`
         * Generates or changes over time
 
         ![http://giphy.com/gifs/processing-hypercube-phxXlMiXA1Xjy](framework/img/workshop/shapeshift.gif)
@@ -197,20 +163,19 @@
       </script>
     </section>
 
-<!--Slide 13-->
     <section class="slide title" data-toc data-markdown>
       <script type="text/template">
         # What is Processing?
       </script>
     </section>
 
-<!--Slide 14-->
     <section class="slide two-col-list" data-markdown>
       <script type="text/template">
       # Processing
       * Why Processing?
-        * Language used by artists &amp; designers
+        * A coding language created for artists &amp; designers
         * Open source
+        * Creates pictures or animations
         * Used to visually represent data
         * Can produce exact shapes and patterns
       * ![http://giphy.com/gifs/processing-creative-coding-openprocessing-jk9L41aToGZQA](framework/img/workshop/sun.gif)
@@ -225,231 +190,232 @@
       </script>
     </section>
 
-<!--Slide 15-->
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Getting Started
+        #How Does Processing Make Art?
 
-        * Processing programs are called Sketches<!-- .element: class="delayed" -->
-        * Let's look at our canvas!<!-- .element: class="delayed" -->
-
-        ![graphing](framework/img/workshop/graphing.png)<!-- .element: class="delayed" -->
+        * Processing programs are called **sketches**
+        * <!-- .element: class="delayed" -->To see the artwork in our sketch, we need a **canvas** to draw it onto
+        * <!-- .element: class="delayed" -->Instead of drawing like us humans by moving a pencil with our hands, Processing draws exact **shapes** on our canvas
+        * <!-- .element: class="delayed" -->We tell Processing where to draw our shapes and what size to make them using **pixels**
+        * <!-- .element: class="delayed" -->If we want an animation instead of just a picture, we can tell Processing to change the drawing over and over, super fast!
 
       </script>
     </section>
 
-<!--Slide 16-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        #Coding Concept Time!
+      </script>
+    </section>
+
     <section class="slide two-col-list" data-markdown>
       <script type="text/template">
-      # Functions
+      # **Coding Concept Time!** Functions
       * A function is...
-        * A command that our computer understands
-        * Processing has built-in functions like <strong>setup</strong> and <strong>draw</strong>
+        * A name for a set of instructions, like *wave your hand*
+        * Processing has a lot of built-in functions like **setup**, **draw**, **line**, and **background**
         * It is already programmed to know what these mean
-      * ![http://giphy.com/gifs/loop-infinite-paper-l0HlwKpPGceLgQC9W](framework/img/workshop/draw.gif)
-
-        ---
-        <div class="dropdown">
-          <button class="dropbtn">Attributions</button>
-          <div class="dropdown-content">
-            <a href="http://giphy.com/gifs/loop-infinite-paper-l0HlwKpPGceLgQC9W">Pencil gif</a>
-          </div>
-
+        * Functions save us time and make our code easier to read!
+      * ```
+        wave your hand at person:
+          1. turn towards person
+          2. raise your arm
+          3. spread your fingers
+          4. bend your forearm left
+          5. bend your forearm right
+          6. bend your forearm left
+          7. bend your forearm right
+        ```
+        ```
+        wave your hand at the instructor
+        wave your hand at your friend
+        ```
       </script>
     </section>
 
-<!--Slide 17-->
     <section class="slide two-col-list" data-markdown>
       <script type="text/template">
-      # Sequence
+      # **Coding Concept Time!** Sequence
 
-      Order Matters!
+      Order matters!
 
       ``` processing
-      void setup() {
-        // This happens 1 time (at the beginning)
+      function setup() {
+        // This happens one time, at the very beginning
       }
       ```
 
       ``` processing
-      void draw() {
-        //This happens multiple times (over and over!)
-        //First this
-        //Then this
-        //... and so on!
+      function draw() {
+        // This happens multiple times, over and over!
+        // First this
+        // Then this
+        // ...and so on
+        // Now do it again!
       }
       ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      # **Coding Concept Time!** Syntax
+
+      **Syn-*what?***
+
+      Syntax is the set of rules for a language. We follow the syntax rules of English whenever we write or talk...
+
+      Try reading this: `hello? HOW ARE YOU TODAY!`
+      
+      How about: `Hello! How are you today?`
+
+      With computers, we have to follow the rules perfectly or they'll get confused and not know what we mean!
 
       </script>
     </section>
 
-<!--Slide 18-->
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Conditionals
+      # **Coding Concept Time!** Syntax
 
-        <strong>Conditionals</strong> are when we make decisions based on conditions.
+      The Processing language has a few rules we need to follow:
 
-        * <strong>IF</strong> it is a school day... wake up at 7:00.
-        * <strong>ELSE</strong>... sleep in.
+      1. Don't mix up capitals and lowercase - `setup` isn't the same as `Setup`
+      1. Functions have parentheses after their names - `draw()`
+      1. Parentheses `()` and curly brackets `{}` always come in pairs
+      1. Every line of code ends with a semicolon `;` - `someCode();`
+      <br>*...unless it already ends with a curly bracket* `someCode() {`
 
-        <p style="color:#00a076">Create your own!</p><!-- .element: class="delayed" -->
-        <p style="color:#00a076">IF ... </p><!-- .element: class="delayed" -->
-        <p style="color:#00a076">ELSE ... </p><!-- .element: class="delayed" -->
+      Processing doesn't care about extra spaces before our code though. That's just for us, and it makes it easier for our human brains to read!
 
       </script>
     </section>
 
-<!--Slide 19-->
-    <section class="slide" data-markdown>
+    <section class="slide two-col-list" data-markdown>
       <script type="text/template">
-        #Variables
+        # The Important Things in Life
+        
+        * What Matters:
+          * Sequence!
+          * Capitals
+          * Parentheses `()`
+          * Curly brackets `{}`
+          * Semicolons `;`
+        * What Doesn't Matter:
+          * Spaces before our code
+      </script>
+    </section>
 
-        A <strong>variable</strong> is like a box! It stores information for us.
-
-        We can use <strong>variables</strong> to keep track of things in our sketch.
-
-        <br>
-        ![variables](framework/img/workshop/box.png)
-
-        ---
-        <div class="dropdown">
-          <button class="dropbtn">Attributions</button>
-          <div class="dropdown-content">
-            <a href="https://pixabay.com/en/box-open-cardboard-box-cardboard-152428/">Box image</a>
-          </div>
-
-        </script>
-      </section>
-
-<!--Slide 20-->
-      <section class="slide" data-markdown>
-        <script type="text/template">
-          #Stay Sharp!
-
-          ``` int ``` - “integer” stores whole numbers
-
-          1. Name our variable <strong>box</strong>
-          1. Assign a value to <strong>box</strong>
-
-          ```processing
-            int box = 3;
-          ```
-
-          * Jump box times<!-- .element: class="delayed" -->
-          * Wave box times<!-- .element: class="delayed" -->
-          * Clap box times<!-- .element: class="delayed" -->
-
-        </script>
-      </section>
-
-<!--Slide 21-->
-        <section class="slide two-col-list" data-markdown>
-          <script type="text/template">
-          # The Important things in life
-          * What Matters:
-            * Sequence!
-            * Capitals
-            * Curly brackets {}
-            * Parentheses ()
-            * Semicolons ;
-          * What Doesn't:
-            * Spacing
-
-          </script>
-        </section>
-
-<!--Slide 22-->
     <section class="slide title" data-toc data-markdown>
       <script type="text/template">
         #LET'S GET CODING!
       </script>
     </section>
 
-<!--Slide 23-->
     <section class="slide" data-toc data-markdown>
       <script type="text/template">
-        #OpenProcessing.org
+        #p5 Online Editor
 
-        Go to <a href="https://openprocessing.org">openprocessing.org</a> and Sign In
+        Go to <a href="https://editor.p5js.org">editor.p5js.org</a> and click **Log in**
 
-        ![openprocessing](framework/img/workshop/openprocessing.png)
+        ![p5js editor](framework/img/workshop/p5-log-in.png)
 
       </script>
     </section>
 
-<!--Slide 24-->
     <section class="slide centered" data-toc data-markdown>
       <script type="text/template">
-        #OpenProcessing.org
-
+        #editor.p5js.org - Log in
+        <!-- SB! CREATE A GENERIC LOGIN FOR KIDS TO USE -->
         ![signin](framework/img/workshop/signin.png)
 
         * workshops@kidslearningcode.com
         * Password: Helloworld123
-
       </script>
     </section>
 
-<!--Slide 25-->
     <section class="slide" data-toc data-markdown>
       <script type="text/template">
-        # + Create a Sketch
+        # Getting Things Ready
 
-        ![settings](framework/img/workshop/settings.png)
+        * Preview your sketch by pressing the **play (▶)** button
+        <br>
+        *Don't worry, all you should see is a blank grey square on the right*
+        * Turn on **Auto-refresh** by checking the box
+        * Make sure to **rename your sketch**!
+
+        ![settings](framework/img/workshop/p5-editor.png)
 
       </script>
     </section>
 
-<!--Slide 26-->
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        #Today's Project
+        <!-- SB! REPLACE WITH P5 EDITOR EMBED -->
+        <iframe src="https://www.openprocessing.org/sketch/254313/embed/" width="500" height="500"></iframe>
+        <!-- SB! ADD LINK TO PROJECT IN EDITOR -->
+      </script>
+    </section>
+
     <section class="slide" data-markdown>
       <script type="text/template">
-      # Setting up the Sketch
+      # The Setup
 
       ``` processing
-      void setup() {
-        size(600,600);
+      function setup() {
+        createCanvas(400, 400);
       }
       ```
 
-      * Tell the computer what size you want your canvas to be
-      * Size (width, height) in pixels
+      Tell the computer we want it to create a canvas using the built-in function `createCanvas`
+      
+      We set the size of our new canvas with a **width** and **height** inside the parantheses `(width, height)`
+      
+      *Remember: ```setup``` only happens once at the very beginning*
+      
+      * Try making your canvas **bigger** or **smaller** by changing the numbers
 
       </script>
     </section>
 
-<!--Slide 27-->
     <section class="slide" data-markdown>
       <script type="text/template">
       # Draw Something
 
       ``` processing
-      void setup() { //This is a comment
-        size(600,600); //Setup only happens one time
-      }
-
-      void draw(){ //Draw loops over and over
-        ellipse(100,100,100,100);
+      function draw() {
+        background(220);
       }
       ```
 
-      * Click "Run" - What happens?
+      When we clicked the play (▶) button a grey square appeared. Boring!
+      
+      * Let's draw a shape...
 
-      ##Remember: We only need ONE setup and ONE draw<!-- .element: class="delayed" -->
+      ``` processing
+      function draw() {
+        background(220);
+        ellipse(100, 200, 300, 400);
+      }
+      ```
+      What shape do you see in your sketch now?
 
       </script>
     </section>
 
-<!--Slide 28-->
-    <section class="slide" data-markdown>
+    <section class="slide two-col-list" data-markdown>
       <script type="text/template">
         #Meet Your New Best Friend
 
-        ##The Reference!
-
-        Open <a href="https://processing.org/reference/">processing.org/reference</a> in a new tab.
-
-        ![http://giphy.com/gifs/friends-friendship-bff-3oEdvaba4h0I536VYQ](framework/img/workshop/bff.gif)
+        * The p5.js Reference!
+          * Open <a href="https://p5js.org/reference">p5js.org/reference</a> in your browser in a new tab
+          ![http://giphy.com/gifs/friends-friendship-bff-3oEdvaba4h0I536VYQ](framework/img/workshop/bff.gif)
+        * Challenge:
+          1. Find `ellipse()` in the reference
+          1. Figure out what each of the numbers between the paranthese do `(?, ?, ?, ?)`
+          1. Change your oval to be a perfect circle
 
           ---
           <div class="dropdown">
@@ -461,114 +427,257 @@
       </script>
     </section>
 
-<!--Slide 29-->
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+        # X and Y Coordinates
+
+        * How does Processing know where to draw our shape?
+          * X is how many pixels from the left
+          * Y is how many pixels from the top
+          * Can you move your ellipse to the centre of the canvas?
+        * ![a diagram showing the attributes of an ellipse](framework/img/workshop/canvas.png)
+      </script>
+    </section>
+
     <section class="slide" data-markdown>
       <script type="text/template">
       # Drawing Shapes
 
-      ##Circle
-      ellipse(x,y,width,height);
+      ##Circles and Ovals
+      ```ellipse(x, y, width, height);```
 
-      ![canvas](framework/img/workshop/ellipse.png)
+      * X and Y are at the center of the circle, and it grows out from there
 
-      * X and Y are at the center of the circle
-
-      </script>
-    </section>
-
-<!--Slide 30-->
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Colour
-
-        ```background (R,G,B);```
-
-        * R,G,B stands for...?
-
-        <p><strong style="color:firebrick;">Red</strong>, <strong style="color:forestgreen;">Green</strong>, <strong style="color:dodgerblue;">Blue</strong></p><!-- .element: class="delayed" -->
-
-        <p>Go to <a href="http://colorpicker.com">colorpicker.com</a></p><!-- .element: class="delayed" -->
-
-        What is the largest number value that RGB can have?<!-- .element: class="delayed" -->
-
-        What colour is (0,0,0)?<!-- .element: class="delayed" -->
+      ![a diagram showing the attributes of an ellipse](framework/img/workshop/ellipse.png)
 
       </script>
     </section>
 
-<!--Slide 31-->
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Add Some Colour
+        #Colours
 
-        ``` processing
-        void setup() {
-          size(600,600);
-          background(255); //We can write one number if all three are the same
-        }
+        Processing doesn't know words like `blue` or `hot pink`, so we tell it what colour we want using **RGB**!
 
-        void draw(){
-          fill(20,200,200); //This changes the shape colour
-          ellipse(100,100,100,100);
-          //rect(10,10,300,100); Add "//" in front of something to hide it
-        }
-        ```
+        * RGB stands for...?
 
-        * What else can you change the colour of? Check the reference!<!-- .element: class="delayed" -->
+        <p><strong style="color:firebrick;">Red</strong>, <strong style="color:forestgreen;">Green</strong>, and <strong style="color:dodgerblue;">Blue</strong></p><!-- .element: class="delayed" -->
+
+        <p>Open <a href="http://colorpicker.com">colorpicker.com</a> in a new tab</p><!-- .element: class="delayed" -->
+
+        What is the largest number we can use for either R, G, or B?<!-- .element: class="delayed" -->
+
+        What colour is (0, 0, 0)?<!-- .element: class="delayed" -->
 
       </script>
     </section>
 
-  <!--Slide 32-->
-      <section class="slide title" data-markdown>
-        <script type="text/template">
-          #Save Your Work!
-          ##Click 'Save' > 'Submit'
-        </script>
-      </section>
-
-<!--Slide 33-->
     <section class="slide" data-markdown>
       <script type="text/template">
-        #mouseMoved
-        * This tracks when the mouse is moved!
-        * Which is which? <i>...Stretch &amp; Scuttle!</i>
+        #But Wait!
 
-        ``` processing
-        void setup() {
-          size(600,600);
-          background(255);
-        }
+        ```background(220);``` only has one number, not three!
 
-        void draw(){
-          fill(20,200,200);
-          ellipse(mouseX,mouseY,100,mouseY); //Replace these with mouseX or mouseY
-        }
+        This is just a faster way of writing ```background(220, 220, 220);```
+
+        * If red, green, and blue are all equal, what kind of colours do we get?
+
+
+        * Change the background colour using the R, G, and B numbers from colorpicker.com
+
+        ```processing
+        function draw() {
+          background(145, 42, 126);
+          ellipse(100, 100, 100, 100);
+        }  
         ```
 
       </script>
     </section>
 
-<!--Slide 34-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #More Colour
+
+        Our ellipse is still white, but we can change its colour too
+
+        Instead of ```background``` we use ```fill```
+
+        ```processing
+        function draw() {
+          background(145, 42, 126);
+          fill(26, 94, 37); // so beautiful!
+          ellipse(100, 100, 100, 100);
+        }  
+        ```
+
+        * Can you use the **Refence** to find the code that will change the black line around our ellipse to another colour?
+
+        <p>We can use ```stroke``` to change the colour of the outline!</p><!-- .element: class="delayed" -->
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # **Coding Concept Time!** Variables
+
+        A variable is like a box! It stores information for us
+
+        We can use variables to keep track of things in our sketch
+
+        ![A cardboard box to represent the concept of variables](framework/img/workshop/box.png)
+
+        Processing has a bunch of variables ready for us to use, but we'll also create our own later on!
+
+        ---
+        <div class="dropdown">
+          <button class="dropbtn">Attributions</button>
+          <div class="dropdown-content">
+            <a href="https://pixabay.com/en/box-open-cardboard-box-cardboard-152428/">Box image</a>
+          </div>
+        </div>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Make It Move
+        
+        We can replace any number in our code with a **variable**
+
+        Processing has a whole bunch of variables ready for us to use like ```mouseX``` and ```mouseY```
+
+        ``` processing
+        function draw() {
+          background(145, 42, 126);
+          fill(26, 94, 37);
+          stroke(1, 209, 229);
+          ellipse(mouseX, mouseY, 100, 100);
+        }
+        ```
+
+        * Where is the computer going to draw our ellipse?
+
+      </script>
+    </section>
+
     <section class="slide" data-markdown>
       <script type="text/template">
         #Paintbrush
 
-        * When do we want the brush to 'draw' on the canvas?
-        * IF the mouse is pressed down<!-- .element: class="delayed" -->
+        Processing runs the instructions in ```draw``` over and over and over...
+
+        * So why do we only see 1 ellipse instead of *1 bazillion* ellipses?
+
+        Our code tells the computer:
+
+        1. Colour the entire sketch using the ```background``` colour
+        1. Set the shape colours using ```fill``` and ```stroke```
+        1. Draw a shape using ```ellipse```
+        1. That's the end of the instructions, so go back up to step 1
+
+
+        * If we only wanted the computer to colour the entire sketch once, where could we move our ```background``` code?
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Paintbrush
+
+        Let's move our ```background``` to the ```setup``` so we can see all the ellipses!
 
         ``` processing
-        void setup(){
-          size(600,600);
-          background(255);
+        function setup() {
+          createCanvas(400, 400);
+          background(145, 42, 126);
         }
 
-        void draw(){
-          if(mousePressed == true){ //IF the mouse is pressed
-            // Draw paintbrush
-            fill(20,200,200);
-            noStroke();
-            ellipse(mouseX,mouseY,20,20);
+        function draw() {
+          fill(26, 94, 37);
+          stroke(1, 209, 229);
+          ellipse(mouseX, mouseY, 100, 100);
+        }
+        ```
+
+        * If you fill the sketch with ellipses and want to start again, just click the play (▶) button
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # **Coding Concept Time!** Conditional Statements
+
+        **Conditional statements** are what computers use to make decisions based on the conditions we give them
+
+        * <strong>If</strong> it is a school day... wake up at 7:00.
+        * <strong>Else</strong>... sleep in.
+
+        <p style="color:#00a076">Create your own!</p><!-- .element: class="delayed" -->
+        <p style="color:#00a076">If *something happens*... *do this* </p><!-- .element: class="delayed" -->
+        <p style="color:#00a076">Else... *do that* </p><!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Paintbrush with a Conditional Statement
+
+        * Let's tell the computer to only draw our ellipses when the mouse button is pressed down using a **conditional statement**
+
+        ``` processing
+        function draw() {
+          if(mouseIsPressed) {
+            fill(26, 94, 37);
+            stroke(1, 209, 229);
+            ellipse(mouseX, mouseY, 100, 100);
+          }
+        }
+        ```
+
+        ```mouseIsPressed``` is another variable in Processing, but instead of a storing a number, it only stores either the word ```true``` or ```false```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Keyboard Buttons Can Be Pressed Too!
+
+        But what if we want to start over without pressing the play (▶) button?
+
+        Challenge:
+
+        * If any key on the keyboard is pressed, erase all of the ellipises
+
+        Hints:
+
+        1. <!-- .element: class="delayed" -->Look in the reference near `mouseIsPressed` for something similar, but for a key instead of a mouse
+        1. <!-- .element: class="delayed" -->We'll need a conditional statement to check if `keyIsPressed`
+        1. <!-- .element: class="delayed" -->We can erase everything with `clear()`, but what if we want to keep our background colour?
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Possible Solution:
+
+        ``` processing
+        function setup() {
+          createCanvas(400, 400);
+          background(145, 42, 126);
+        }
+
+        function draw() {
+          if(mouseIsPressed) {
+            fill(26, 94, 37);
+            stroke(1, 209, 229);
+            ellipse(mouseX, mouseY, 100, 100);
+          }
+          
+          if(keyIsPressed) {
+            background(145, 42, 126);
           }
         }
         ```
@@ -576,41 +685,90 @@
       </script>
     </section>
 
-<!--Slide 35-->
     <section class="slide" data-markdown>
       <script type="text/template">
-        #keyPressed
+        # Comments
 
-        But what if we want to start over?
+        As your code gets longer and more complicated, it can be easy to forget what every line of code does. We can add comments to our code though to help with that, and Processing will just ignore them!
 
-        Challenge: IF a key is pressed (```keyPressed```) clear the background
-
-        HINT: This has to do with <strong>sequence</strong> (when we draw the background)
-
+        Comments can be on their own line:
+        ```processing
+        }
+        // this erases the ellipses when we press a key
+        if(keyIsPressed) {
+        ```
+        
+        ...or at the end of a line of code:
+        ```processing
+        createCanvas(400, 400); // make it 400 pixels wide and 400 pixels high
+        ```
       </script>
     </section>
 
-<!--Slide 36-->
     <section class="slide" data-markdown>
       <script type="text/template">
-        #keyPressed
+        #Let's Create Our Own Variables
 
-        Possible Solution:
+        Our ellipsis moves with the built-in variables `mouseX` and `mouseY` but we can create our own variables to change things too!
+
+        When we create variables, they usually go at the very *tippity-top* of the code before `function setup() {` and look like this:
+
+        ```processing
+        let myVariable = 200;
+        ```
+
+        Once we've created a variable, we can change the value anywhere in our code using math like this:
+
+        ```processing
+        myVariable = myVariable * 2;
+        ```        
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Make it Grow!
+
+        1. Create a new variable - it's going to make your ellipse get bigger so give it a meainingful name like `size` or `grow`
+        1. Put a small number in your variable
+        1. Replace the width or height (or both!) of your ellipse with the variable
+        1. Change the number in your variable using math, but make sure Processing does it over and over and over...
+        1. Put the small number back in your variable when a key gets pressed
+
+        Tip: You can **comment out** the conditional statement for `mouseIsPressed` to more easily see if your ellipse is growing the way you want it to
+
+        ```processing
+        // if(mouseIsPressed) {
+          fill(26, 94, 37);
+          ...
+        // }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Possible Solution:
 
         ``` processing
-        void setup(){
-          size(600,600);
-          background(255);
+        let grow = 10; // Create a new variable and put the number 10 in it
+
+        function setup() {
+          createCanvas(400, 400);
+          background(145, 42, 126);
         }
 
-        void draw(){
-          if(mousePressed == true){
-            fill(20,200,200);
-            noStroke();
-            ellipse(mouseX,mouseY,20,20);
+        function draw() {
+          if(mouseIsPressed) {
+            fill(26, 94, 37);
+            stroke(1, 209, 229);
+            ellipse(mouseX, mouseY, grow, 100); // Use the variable to set the width
+            grow = grow + 10; // Add 10 to the number in the variable
           }
-          if(keyPressed == true){ //IF a key is pressed
-            background(255); //Re-draw a clean background
+          
+          if(keyIsPressed) {
+            background(145, 42, 126);
+            grow = 10; // Put the number 10 in the variable
           }
         }
         ```
@@ -618,69 +776,16 @@
       </script>
     </section>
 
-  <!--Slide 37-->
-      <section class="slide title" data-markdown>
-        <script type="text/template">
-          #Keep Saving!
-          ##Click 'Save' > 'Submit'
-        </script>
-      </section>
-
-<!--Slide 38-->
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Variables
-
-        Let's make it change using variables.
-
-        1. Name the variable e.g. <strong>grow</strong> (at the top!)
-        1. Assign a value (number) to <strong>grow</strong>
-        1. Replace a number in your code with <strong>grow</strong>
-
-      </script>
-    </section>
-
-<!--Slide 39-->
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Make it Grow!
-
-        Possible Solution:
-
-        ``` processing
-        int grow = 1; // (1) Name our variable and assign a value
-
-        void setup(){
-          size(600,600);
-          background(255);
-        }
-
-        void draw(){
-          if(mousePressed == true){
-            fill(20,200,200);
-            noStroke();
-            grow = grow + 1; // (3) Make the variable increase by 1 each time
-            ellipse(mouseX,mouseY,20,grow); // (2) Replace a value with grow
-          }
-          if(keyPressed == true){
-            background(255);
-            grow = 1; // (4) Reset grow to 1 when the background clears
-          }
-        }
-        ```
-
-      </script>
-    </section>
-
-<!--Slide 40-->
     <section class="slide two-col-list" data-markdown>
       <script type="text/template">
-        #That's So Random
+        # **Coding Concept Time!** That's So Random!
         * ![http://giphy.com/gifs/cute-space-kawaii-3o7TKCTt7cNHg10utO](framework/img/workshop/taco.gif)
-        * Choose a random number using ```random()```
-          * This function will choose a number between 0 and the number we set as the maximum.
-          * E.G. ```random(100)```
-          * What is the largest number we can use for colours in RGB?
+        * Computers can generate random numbers:
+          * Processing has a function called `random()` - easy to remember!
+          * `random(10)` can pick from 0-9
+          * `random(1, 11)` picks from 1-10
+          * We can put a random number in a variable like this `myWidth = random(50, 150);`
+          * We're going to set our `fill` to be random. What was the biggest number that R, G, and B can be?
 
 
           ---
@@ -693,63 +798,58 @@
       </script>
     </section>
 
-<!--Slide 41-->
-    <section class="slide title" data-markdown>
+    <section class="slide two-col-list" data-markdown>
       <script type="text/template">
-        #Keep Saving!
-        ##Click 'Save' > 'Submit'
+        # Almost Done!
+
+        * The example sketch:
+          <iframe src="https://www.openprocessing.org/sketch/254313/embed/" width="500" height="500"></iframe> <!-- SB! REPLACE WITH P5 EDITOR EMBED -->
+        * What's different from ours?
+          * Do the ellipses grow like ours or are they random sizes?
+          * The colours change a lot too... maybe it needs more than one random number for `fill`?
+        * Other things to try:
+          * Set the X and Y with random numbers
+          * Set the width and height with mouseX or mouseY
+          * Can you draw rectangles?
       </script>
     </section>
 
-<!--Slide 42-->
-    <section class="slide title" data-markdown>
-      <script type="text/template">
-        #Final Project
-      </script>
-    </section>
-
-<!--Slide 43-->
-  <section class="slide" data-markdown>
+  <section class="slide title" data-markdown>
     <script type="text/template">
-      #Emoji Art
-
-      Example:
-
-      <iframe src="https://www.openprocessing.org/sketch/266635/embed/" width="500" height="500"></iframe>
-      <!-- insert example in iframe above-->
-
-      (Click to draw tears)
-      <!--include any notes above-->
-
+      # New Sketch!
     </script>
   </section>
 
-<!--Slide 44-->
-<section class="slide" data-markdown>
+
+<section class="slide two-col-list" data-markdown>
   <script type="text/template">
-    #Emoji Art<!--insert activity title here-->
-    STEPS:<!--insert steps below-->
+    # Finding Inspiration
 
-    * Save your project and create a new sketch
-    * Set up the sketch: Choose a size and background colour
-    * Use shapes to draw your own emoji or character
-    * Make it interactive! Make it move, grow, or change in some way.
-    * Don't forget about your BFF (the <strong>reference</strong>!)
-
-    Get inspiration from others! Check out <a href="http://openprocessing.org/browse">openprocessing.org/browse</a>
-
+    * <iframe src="https://www.openprocessing.org/sketch/544192/embed/" width="500" height="500"></iframe>
+    * [openprocessing.org](https://www.openprocessing.org)
+      * A community site for sharing Processing sketches
+      * Plenty of sketches to see everything possible with Processing
+      * You can see their code to figure out how it works
+      * The site also has an online editor like the one we've been using
   </script>
 </section>
 
-<!--Slide 45-->
+<section class="slide two-col-list" data-markdown>
+  <script type="text/template">
+    # Can You Create Something Like This?
+
+    * <iframe src="https://www.openprocessing.org/sketch/544192/embed/" width="500" height="500"></iframe>
+    * In our own words, let's make a list of everything we see:
+      <textarea rows="11" cols="40" style="font-size: 0.9em;">- drawing circles</textarea>
+  </script>
+</section>
+
     <section class="slide title" data-markdown>
       <script type="text/template">
         #DEMOS
       </script>
     </section>
 
-<!--Slide 46-->
-    <main>
 
       <section class="slide" data-toc data-markdown>
         <script type="text/template">
@@ -764,7 +864,6 @@
         </script>
       </section>
 
-<!--Slide 47-->
     <!-- Last slide -->
     <section class="slide last">
       <h1>Thank you!</h1>
