@@ -132,6 +132,15 @@
       </script>
     </section>
 
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        #Today's Project
+        <!-- SB! REPLACE WITH P5 EDITOR EMBED -->
+        <iframe src="https://www.openprocessing.org/sketch/254313/embed/" width="500" height="500"></iframe>
+        <!-- SB! ADD LINK TO PROJECT IN EDITOR -->
+      </script>
+    </section>
+
     <section class="slide title" data-toc data-markdown>
       <script type="text/template">
         # What is Generative Art?
@@ -145,6 +154,8 @@
         * Artwork that is created with code
         * Often uses mathematical operations `+ - * /`
         * Generates or changes over time
+
+        The process embraces **experimentation** and **happy accidents** in a way that reshapes the role of the artist.
 
         ![http://giphy.com/gifs/processing-hypercube-phxXlMiXA1Xjy](framework/img/workshop/shapeshift.gif)
         ![http://giphy.com/gifs/processing-attempt-kinematics-ini6gpWb8ZbQ4](framework/img/workshop/bounce.gif)
@@ -160,6 +171,40 @@
             <a href="http://giphy.com/gifs/art-animated-loop-GXo1dHx8txq4o">Turning gif</a>
           </div>
 
+      </script>
+    </section>
+
+     <section class="slide" data-markdown>
+      <script type="text/template">
+        #Generative Art Examples
+
+        ##LTrees by Kate Compton
+
+        <video controls width="800" src="framework/videos/ltrees.mov">
+          Something went wrong, try opening the video file from the slides folder in framework/videos/ltrees.mov
+        </video>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Generative Art Examples
+
+        ##Wobbly Swarm by Konstantin Makhmutov
+
+        <iframe src="https://www.openprocessing.org/sketch/492096/embed/" width="800" height="500"></iframe>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Generative Art Examples
+
+        ##Quilts by Libs Elliott
+
+        <img src="framework/img/workshop/libs-elliott.jpeg" width="400" style="vertical-align: top">
+        <img src="framework/img/workshop/libs-elliott-ts1.jpeg" width="400" style="vertical-align: top">
+        <img src="framework/img/workshop/libs-elliott-2.jpg" width="400" style="vertical-align: top">
       </script>
     </section>
 
@@ -211,7 +256,7 @@
 
     <section class="slide two-col-list" data-markdown>
       <script type="text/template">
-      # **Coding Concept Time!** Functions
+      # **Coding Concept:** Functions
       * A function is...
         * A name for a set of instructions, like *wave your hand*
         * Processing has a lot of built-in functions like **setup**, **draw**, **line**, and **background**
@@ -236,7 +281,7 @@
 
     <section class="slide two-col-list" data-markdown>
       <script type="text/template">
-      # **Coding Concept Time!** Sequence
+      # **Coding Concept:** Sequence
 
       Order matters!
 
@@ -260,7 +305,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      # **Coding Concept Time!** Syntax
+      # **Coding Concept:** Syntax
 
       **Syn-*what?***
 
@@ -277,7 +322,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      # **Coding Concept Time!** Syntax
+      # **Coding Concept:** Syntax
 
       The Processing language has a few rules we need to follow:
 
@@ -352,7 +397,7 @@
 
     <section class="slide centered" data-markdown>
       <script type="text/template">
-        #Today's Project
+        #Reminder: Today's Project
         <!-- SB! REPLACE WITH P5 EDITOR EMBED -->
         <iframe src="https://www.openprocessing.org/sketch/254313/embed/" width="500" height="500"></iframe>
         <!-- SB! ADD LINK TO PROJECT IN EDITOR -->
@@ -371,7 +416,7 @@
 
       Tell the computer we want it to create a canvas using the built-in function `createCanvas`
       
-      We set the size of our new canvas with a **width** and **height** inside the parantheses `(width, height)`
+      We set the size of our new canvas with a **width** and **height** inside the parentheses `(width, height)`
       
       *Remember: ```setup``` only happens once at the very beginning*
       
@@ -414,7 +459,7 @@
           ![http://giphy.com/gifs/friends-friendship-bff-3oEdvaba4h0I536VYQ](framework/img/workshop/bff.gif)
         * Challenge:
           1. Find `ellipse()` in the reference
-          1. Figure out what each of the numbers between the paranthese do `(?, ?, ?, ?)`
+          1. Figure out what each of the numbers between the parenthese do `(?, ?, ?, ?)`
           1. Change your oval to be a perfect circle
 
           ---
@@ -463,7 +508,7 @@
 
         <p><strong style="color:firebrick;">Red</strong>, <strong style="color:forestgreen;">Green</strong>, and <strong style="color:dodgerblue;">Blue</strong></p><!-- .element: class="delayed" -->
 
-        <p>Open <a href="http://colorpicker.com">colorpicker.com</a> in a new tab</p><!-- .element: class="delayed" -->
+        <p>Open <a href="http://colorpicker.me">colorpicker.me</a> in a new tab</p><!-- .element: class="delayed" -->
 
         What is the largest number we can use for either R, G, or B?<!-- .element: class="delayed" -->
 
@@ -483,7 +528,7 @@
         * If red, green, and blue are all equal, what kind of colours do we get?
 
 
-        * Change the background colour using the R, G, and B numbers from colorpicker.com
+        * Change the background colour using the R, G, and B numbers from colorpicker.me
 
         ```processing
         function draw() {
@@ -519,7 +564,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        # **Coding Concept Time!** Variables
+        # **Coding Concept:** Variables
 
         A variable is like a box! It stores information for us
 
@@ -606,7 +651,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        # **Coding Concept Time!** Conditional Statements
+        # **Coding Concept:** Conditional Statements
 
         **Conditional statements** are what computers use to make decisions based on the conditions we give them
 
@@ -648,7 +693,7 @@
 
         Challenge:
 
-        * If any key on the keyboard is pressed, erase all of the ellipises
+        * If any key on the keyboard is pressed, erase all of the ellipses
 
         Hints:
 
@@ -715,6 +760,9 @@
 
         ```processing
         let myVariable = 200;
+
+        function setup() {
+        ...
         ```
 
         Once we've created a variable, we can change the value anywhere in our code using math like this:
@@ -727,12 +775,40 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
+        #Let's Create Our Own Variables
+
+        Imagine I was a computer and you could control how many times I tap my nose with a variable...
+
+        ```processing
+        let taps = 0; // create a variable called "taps" and put the number 0 in it
+
+        function setup() {
+          raiseFingerToNose(); // tapping finger ready...
+        }
+
+        function draw() {
+          tapNose(taps); // tap nose "taps" times
+          taps = taps + 1; // change the number in "taps" by adding 1 to it
+        }
+
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
         # Make it Grow!
 
-        1. Create a new variable - it's going to make your ellipse get bigger so give it a meainingful name like `size` or `grow`
+        1. Create a new variable - it's going to make your ellipses get bigger so give it a meaningful name like `size` or `grow`. 
+
+          Remember to put it before ```function setup() {``` and it should look something like ```let myVariable = ...```
+        
         1. Put a small number in your variable
-        1. Replace the width or height (or both!) of your ellipse with the variable
+        
+        1. Replace the width or height (or both!) of your ellipses with the variable
+        
         1. Change the number in your variable using math, but make sure Processing does it over and over and over...
+        
         1. Put the small number back in your variable when a key gets pressed
 
         Tip: You can **comment out** the conditional statement for `mouseIsPressed` to more easily see if your ellipse is growing the way you want it to
@@ -778,7 +854,7 @@
 
     <section class="slide two-col-list" data-markdown>
       <script type="text/template">
-        # **Coding Concept Time!** That's So Random!
+        # **Coding Concept:** That's So Random!
         * ![http://giphy.com/gifs/cute-space-kawaii-3o7TKCTt7cNHg10utO](framework/img/workshop/taco.gif)
         * Computers can generate random numbers:
           * Processing has a function called `random()` - easy to remember!
@@ -795,6 +871,28 @@
               <a href="http://giphy.com/gifs/cute-space-kawaii-3o7TKCTt7cNHg10utO">Taco gif</a>
             </div>
 
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Random Taps!
+
+        Let's try out this updated nose-tapping code:
+
+        ```processing
+        let taps = 0;
+
+        function setup() {
+          raiseFingerToNose();
+        }
+
+        function draw() {
+          tapNose(taps);
+          taps = random(1, 11); // put a random number between 1-10 in "taps"
+        }
+
+        ```
       </script>
     </section>
 
