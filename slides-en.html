@@ -30,9 +30,13 @@
         <p><strong>Wifi:</strong> Wifi Network</p>
         <p><strong>Password:</strong> Wifi Password</p>
         <hr>
+        <h2>Create a<br>Project</h2>
+        <p>Open <a href="https://editor.p5js.org">editor.p5js.org</a></p>
+        <p>Optional: Click <strong>Sign Up</strong> to create an account</p>
+        <hr>
         <h2>Get <br>Familiar</h2>
         <p>Go to <a href="http://openprocessing.org">openprocessing.org</a></p>
-        <p>Check out the examples of what Processing can do</p>
+        <p>Check out some examples made with Processing</p>
       </div>
 
       <footer>
@@ -59,7 +63,7 @@
       -->
       <footer>
         <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
-        <p class="left">Content created by Kassandra Lenters &amp; Kat Barrett for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="left">Content created by Kassandra Lenters &amp; Kat Barrett, revisions by Steve Blair for <a prefix="cc: http://creativecommons.org/ns#" href="http://canadalearningcode.ca" property="cc:attributionName" rel="cc:attributionURL">Canada Learning Code</a></p>
         <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
       </footer>
     </section>
@@ -108,22 +112,20 @@
      </script>
     </section>
 
-    <section class="slide" data-markdown>
-     <script type= "text/template">
-       #Code is..
-       ## A SET OF INSTRUCTIONS THAT TELLS THE COMPUTER WHAT TO DO.
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Code is...
 
-       <br>
-       ![Running robot gif](framework/img/workshop/runningrobot.gif)
-       ![Dancing robot gif](framework/img/workshop/dancingrobot.gif)
-       ![eating robot gif](framework/img/workshop/eatingrobot.gif)
-       ![Dancing robot gif](framework/img/workshop/dancingrobot2.gif)
-       ![Dancing robot gif](framework/img/workshop/bluerobot.gif)
-       ![Dancing robot gif](framework/img/workshop/partyrobot.gif)
+        **...a set of instructions that tell a computer what to do**.
 
-       <p> In code, we call a set of instructions an <strong style="color:#ef0919;">algorithm</strong>.</p><!-- .element: class="delayed" -->
+        <ul>
+          <li class="delayed">Computers don’t understand the way humans talk</li>
+          <li class="delayed">They only understand a specific kind of language: computer, or “programming” languages</li>
+          <li class="delayed">Computer languages are written in code</li>
+          <li class="delayed">There are lots of computer languages!</li>
+        </ul>
 
-     </script>
+      </script>
     </section>
 
     <section class="slide title" data-markdown>
@@ -193,7 +195,9 @@
 
         ##Wobbly Swarm by Konstantin Makhmutov
 
-        <iframe src="framework/processing-projects/example-wobbly-swarm.html" width="800" height="500"></iframe>
+        <button style="display: block; margin-top: 1em" onclick="document.getElementById('wobbly-swarm').src = document.getElementById('wobbly-swarm').src">Refresh</button>
+
+        <iframe id="wobbly-swarm" src="framework/processing-projects/example-wobbly-swarm.html" width="800" height="500"></iframe>
       </script>
     </section>
 
@@ -220,7 +224,7 @@
       # Processing
       * Why Processing?
         * A coding language created for artists &amp; designers
-        * Open source
+        * Open source and free to use
         * Creates pictures or animations
         * Used to visually represent data
         * Can produce exact shapes and patterns
@@ -238,13 +242,26 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
+      # Processing Language Variations
+      
+      We'll be using a variation of Processing called **P5.js**
+
+      With Processing being open source software, the community has built a number of variations by combining the original verstion with other programming languages.
+
+      With P5.js we'll actually be learning to write our code in **Javascript**, a very popular language used on the web.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
         #How Does Processing Make Art?
 
         * Processing programs are called **sketches**
         * <!-- .element: class="delayed" -->To see the artwork in our sketch, we need a **canvas** to draw it onto
         * <!-- .element: class="delayed" -->Instead of drawing like us humans by moving a pencil with our hands, Processing draws exact **shapes** on our canvas
         * <!-- .element: class="delayed" -->We tell Processing where to draw our shapes and what size to make them using **pixels**
-        * <!-- .element: class="delayed" -->If we want an animation instead of just a picture, we can tell Processing to change the drawing over and over, super fast!
+        * <!-- .element: class="delayed" -->If we want an animation instead of just a picture, we can tell Processing to change the drawing over and over, super fast in a **loop**!
 
       </script>
     </section>
@@ -335,22 +352,16 @@
 
       Processing doesn't care about extra spaces before our code though. That's just for us, and it makes it easier for our human brains to read!
 
-      </script>
-    </section>
+      ``` processing
+      outer layer {
+        inner layer {
+          code!
+        }
+      }
+      ```
 
-    <section class="slide two-col-list" data-markdown>
-      <script type="text/template">
-        # The Important Things in Life
-        
-        * What Matters:
-          * Sequence!
-          * Capitals
-          * Parentheses `()`
-          * Curly brackets `{}`
-          * Semicolons `;`
-        * What Doesn't Matter:
-          * Spaces before our code
       </script>
+      }
     </section>
 
     <section class="slide title" data-toc data-markdown>
@@ -361,29 +372,9 @@
 
     <section class="slide" data-toc data-markdown>
       <script type="text/template">
-        #p5 Online Editor
+        # P5js Online Editor
 
-        Go to <a href="https://editor.p5js.org">editor.p5js.org</a> and click **Log in**
-
-        ![p5js editor](framework/img/workshop/p5-log-in.png)
-
-      </script>
-    </section>
-
-    <section class="slide centered" data-toc data-markdown>
-      <script type="text/template">
-        #editor.p5js.org - Log in
-        <!-- SB! CREATE A GENERIC LOGIN FOR KIDS TO USE -->
-        ![signin](framework/img/workshop/signin.png)
-
-        * workshops@kidslearningcode.com
-        * Password: Helloworld123
-      </script>
-    </section>
-
-    <section class="slide" data-toc data-markdown>
-      <script type="text/template">
-        # Getting Things Ready
+        Open [**editor.p5js.org**](https://editor.p5js.org)
 
         * Preview your sketch by pressing the **play (▶)** button
         <br>
@@ -459,7 +450,7 @@
         * Challenge:
           1. Find `ellipse()` in the reference
           1. Figure out what each of the numbers between the parenthese do `(?, ?, ?, ?)`
-          1. Change your oval to be a perfect circle
+          1. Change your oval to be a perfect circle. There are 3 different ways to do it!
 
           ---
           <div class="dropdown">
@@ -478,8 +469,9 @@
         * How does Processing know where to draw our shape?
           * X is how many pixels from the left
           * Y is how many pixels from the top
-          * Can you move your ellipse to the centre of the canvas?
         * ![a diagram showing the attributes of an ellipse](framework/img/workshop/canvas.png)
+
+        ##Can you move your ellipse to the centre of the canvas?
       </script>
     </section>
 
@@ -505,13 +497,13 @@
 
         * RGB stands for...?
 
-        <p><strong style="color:firebrick;">Red</strong>, <strong style="color:forestgreen;">Green</strong>, and <strong style="color:dodgerblue;">Blue</strong></p><!-- .element: class="delayed" -->
+        <div><p><strong style="color:firebrick;">Red</strong>, <strong style="color:forestgreen;">Green</strong>, and <strong style="color:dodgerblue;">Blue</strong></p>
 
-        <p>Open <a href="http://colorpicker.me">colorpicker.me</a> in a new tab</p><!-- .element: class="delayed" -->
+        <p>Open <a href="https://www.google.com/search?q=colour+picker">Google's Colour Picker</a> in a new tab. <br>*You can also just search "colour picker" on Google to find it anytime*</p>
 
-        What is the largest number we can use for either R, G, or B?<!-- .element: class="delayed" -->
+        What is the largest number we can use for either R, G, or B?
 
-        What colour is (0, 0, 0)?<!-- .element: class="delayed" -->
+        What colour is (0, 0, 0)?</div><!-- .element: class="delayed" -->
 
       </script>
     </section>
@@ -541,6 +533,26 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
+        # **Coding Concept:** Comments
+
+        As your sketch gets longer and more complicated, it can be easy to forget what every line of code does. We can add comments to our code though to help with that, and Processing will just ignore them!
+
+        Comments can be on their own line:
+        ```processing
+        }
+        // this erases the ellipses when we press a key
+        if(keyIsPressed) {
+        ```
+        
+        ...or at the end of a line of code:
+        ```processing
+        background(145, 42, 126); // purpley-pink colour
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
         #More Colour
 
         Our ellipse is still white, but we can change its colour too
@@ -555,7 +567,7 @@
         }  
         ```
 
-        * Can you use the **Refence** to find the code that will change the black line around our ellipse to another colour?
+        * Can you use the **Reference** to find the code that will change the black line around our ellipse to another colour?
 
         <p>We can use ```stroke``` to change the colour of the outline!</p><!-- .element: class="delayed" -->
       </script>
@@ -654,12 +666,11 @@
 
         **Conditional statements** are what computers use to make decisions based on the conditions we give them
 
-        * <strong>If</strong> it is a school day... wake up at 7:00.
-        * <strong>Else</strong>... sleep in.
+        * <strong>If</strong> it is raining... then grab your umbrella.
+        * <strong>If</strong> you are hungry... then have a snack.
 
-        <p style="color:#ef0919">Create your own!</p><!-- .element: class="delayed" -->
-        <p style="color:#ef0919">If *something happens*... *do this* </p><!-- .element: class="delayed" -->
-        <p style="color:#ef0919">Else... *do that* </p><!-- .element: class="delayed" -->
+        <div><p style="color:#ef0919">Create your own!</p>
+        <p style="color:#ef0919">If *something happens*... *then do this* </p></div><!-- .element: class="delayed" -->
 
       </script>
     </section>
@@ -697,7 +708,7 @@
         Hints:
 
         1. <!-- .element: class="delayed" -->Look in the reference near `mouseIsPressed` for something similar, but for a key instead of a mouse
-        1. <!-- .element: class="delayed" -->We'll need a conditional statement to check if `keyIsPressed`
+        1. <!-- .element: class="delayed" -->We'll need a conditional statement to check if a key is being pressed
         1. <!-- .element: class="delayed" -->We can erase everything with `clear()`, but what if we want to keep our background colour?
 
       </script>
@@ -726,26 +737,6 @@
         }
         ```
 
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Comments
-
-        As your code gets longer and more complicated, it can be easy to forget what every line of code does. We can add comments to our code though to help with that, and Processing will just ignore them!
-
-        Comments can be on their own line:
-        ```processing
-        }
-        // this erases the ellipses when we press a key
-        if(keyIsPressed) {
-        ```
-        
-        ...or at the end of a line of code:
-        ```processing
-        createCanvas(400, 400); // make it 400 pixels wide and 400 pixels high
-        ```
       </script>
     </section>
 
@@ -936,6 +927,7 @@
     # Can You Create Something Like This?
 
     * <iframe src="framework/processing-projects/project-2.html" width="500" height="500"></iframe>
+      <a href="https://editor.p5js.org/steveclc/sketches/eH3oRzgYp">View the code for this sketch</a>
     * In our own words, let's make a list of everything we see:
       <textarea rows="11" cols="40" style="font-size: 0.9em;">- drawing circles</textarea>
   </script>
@@ -956,7 +948,22 @@
           <p><strong>I can</strong> draw shapes using x,y coordinates</p><!-- .element: class="delayed" -->
           <p><strong>I can</strong> use conditionals to make my project interactive</p><!-- .element: class="delayed" -->
           <p><strong>I can</strong> use variables to track and change things in my project</p><!-- .element: class="delayed" -->
-          <p><strong>I can</strong> use OpenProcessing to KEEP CODING!</p><!-- .element: class="delayed" -->
+          <p><strong>I can</strong> use P5.js to KEEP CODING!</p><!-- .element: class="delayed" -->
+
+        </script>
+      </section>
+
+      <section class="slide" data-toc data-markdown>
+        <script type="text/template">
+          # Next Steps
+
+          Check out the P5.js examples: <a href="https://p5js.org/examples/">p5js.org/examples</a>
+          
+          Try more P5.js lessons: <a href="https://p5js.org/learn/">p5js.org/learn</a>
+          
+          Watch Daniel Shiffman's *Coding Train* series: <a href="https://www.youtube.com/user/shiffman">youtube.com/user/shiffman</a>
+          
+          See what the community is making with Processing: <a href="https://www.openprocessing.org/">openprocessing.org</a>
 
         </script>
       </section>
