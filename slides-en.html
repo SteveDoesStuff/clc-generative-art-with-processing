@@ -74,35 +74,86 @@
       </script>
     </section>
 
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Getting Started with Zoom
+      </script>
+    </section>
+
     <section class="slide" data-markdown>
+      <script type="text/template">
+        # Zoom: Muting and Unmuting
+        ![Muting and unmuting in Zoom](framework/img/workshop/zoom-mute.png)
+       </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Zoom: How to Chat
+        ![Chat in Zoom](framework/img/workshop/zoom-chat.png)
+       </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Zoom: Raising Your Hand
+        ![Participants in Zoom](framework/img/workshop/zoom-participants.png)
+       </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Zoom: Raising Your Hand
+        ![Raising your hand in Zoom](framework/img/workshop/zoom-hand.png)
+       </script>
+    </section>
+
+    <!-- <section class="slide" data-markdown>
       <script type="text/template">
         # Table of Contents
 
         <div class="table-of-contents"></div>
        </script>
+    </section> -->
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+       ![Coders Code Banner](framework/img/workshop/scroll.png)
+         ## 1. Be friendly and welcoming
+         ## 2. Be mindful of how much space you take up in conversations
+         ## 3. Be respectful of others by choosing words and actions with care
+         ## 4. Ask questions
+         ## 5. Take care of your body
+         ## 6. No photos or audio/video recordings
+      </script>
     </section>
 
-    <section class= "slide" data-markdown>
+    <section class="slide title" data-markdown>
       <script type="text/template">
-        #Agenda
+        #Land Acknowledgement
+      </script>
+    </section>
 
-        Intro to Generative Art
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Ice Breaker
+        ##Let's get to know each other!
+      </script>
+    </section>
 
-        Making a Simple Project in Processing Together
-
-        Break
-
-        Challenge: Create a New Project Using What We've Learned
-
+     <section class="slide title" data-markdown>
+      <script type="text/template">
+        # Today's Project
+        ## We're learning how to create<br> generative art with Processing
       </script>
     </section>
 
     <section class="slide centered" data-markdown>
       <script type="text/template">
-       ![Coders Code Banner](framework/img/workshop/scroll.png)
-         ## 1. ASK FOR HELP  <!-- .element: class="delayed" -->
-         ## 2. BE PRESENT  <!-- .element: class="delayed" -->
-         ## 3. TRY YOUR BEST!  <!-- .element: class="delayed" -->
+        #Today's Project
+        <iframe src="framework/processing-projects/project-1.html" width="500" height="500"></iframe>
+
+        Click and drag to see what happens
       </script>
     </section>
 
@@ -118,6 +169,8 @@
 
         **...a set of instructions that tell a computer what to do**.
 
+        In code, we call a set of instructions an *algorithm*
+
         <ul>
           <li class="delayed">Computers don’t understand the way humans talk</li>
           <li class="delayed">They only understand a specific kind of language: computer, or “programming” languages</li>
@@ -125,22 +178,6 @@
           <li class="delayed">There are lots of computer languages!</li>
         </ul>
 
-      </script>
-    </section>
-
-    <section class="slide title" data-markdown>
-      <script type="text/template">
-        # Today's Project
-        ## We're learning how to create<br> generative art with Processing
-      </script>
-    </section>
-
-    <section class="slide centered" data-markdown>
-      <script type="text/template">
-        #Today's Project
-        <iframe src="framework/processing-projects/project-1.html" width="500" height="500"></iframe>
-
-        Click and drag to see what happens
       </script>
     </section>
 
@@ -181,7 +218,7 @@
       <script type="text/template">
         #Generative Art Examples
 
-        ##LTrees by Kate Compton
+        ##<a href="http://www.galaxykate.com/apps/Prototypes/LTrees/">LTrees</a> by <a href="http://www.galaxykate.com/">Kate Compton</a>
 
         <video controls width="800" src="framework/videos/ltrees.mov">
           Something went wrong, try opening the video file from the slides folder in framework/videos/ltrees.mov
@@ -193,7 +230,7 @@
       <script type="text/template">
         #Generative Art Examples
 
-        ##Wobbly Swarm by Konstantin Makhmutov
+        ##Wobbly Swarm by <a href="https://www.openprocessing.org/user/56835">Konstantin Makhmutov</a>
 
         <button style="display: block; margin-top: 1em" onclick="document.getElementById('wobbly-swarm').src = document.getElementById('wobbly-swarm').src">Refresh</button>
 
@@ -205,7 +242,7 @@
       <script type="text/template">
         #Generative Art Examples
 
-        ##Quilts by Libs Elliott
+        ##Quilts & Textiles by <a href="https://www.libselliott.com/">Libs Elliott</a>
 
         <img src="framework/img/workshop/libs-elliott.jpeg" width="400" style="vertical-align: top">
         <img src="framework/img/workshop/libs-elliott-ts1.jpeg" width="400" style="vertical-align: top">
@@ -250,6 +287,8 @@
 
       With P5.js we'll actually be learning to write our code in **Javascript**, a very popular language used on the web.
 
+      You can learn more about the original version of Processing and the other variations on <a href="https://processing.org/">processing.org</a>
+
       </script>
     </section>
 
@@ -259,7 +298,7 @@
 
         * Processing programs are called **sketches**
         * <!-- .element: class="delayed" -->To see the artwork in our sketch, we need a **canvas** to draw it onto
-        * <!-- .element: class="delayed" -->Instead of drawing like us humans by moving a pencil with our hands, Processing draws exact **shapes** on our canvas
+        * <!-- .element: class="delayed" -->Instead of drawing like us humans by moving a pencil with our hands, Processing draws exact shapes, called **primitives**, onto our canvas
         * <!-- .element: class="delayed" -->We tell Processing where to draw our shapes and what size to make them using **pixels**
         * <!-- .element: class="delayed" -->If we want an animation instead of just a picture, we can tell Processing to change the drawing over and over, super fast in a **loop**!
 
@@ -272,7 +311,7 @@
       </script>
     </section>
 
-    <section class="slide two-col-list" data-markdown>
+    <!--<section class="slide two-col-list" data-markdown>
       <script type="text/template">
       # **Coding Concept:** Functions
       * A function is...
@@ -295,7 +334,7 @@
         wave your hand at your friend
         ```
       </script>
-    </section>
+    </section>-->
 
     <section class="slide two-col-list" data-markdown>
       <script type="text/template">
@@ -311,7 +350,7 @@
 
       ``` processing
       function draw() {
-        // This happens multiple times, over and over!
+        // This happens multiple times, over and over in a loop!
         // First this
         // Then this
         // ...and so on
@@ -493,7 +532,7 @@
       <script type="text/template">
         #Colours
 
-        Processing doesn't know words like `blue` or `hot pink`, so we tell it what colour we want using **RGB**!
+        Processing can understand simple colour names like `blue` or `pink`, but not every single colour has a name. We can tell it exactly what colour we want using **RGB**!
 
         * RGB stands for...?
 
@@ -584,7 +623,7 @@
 
         ![A cardboard box to represent the concept of variables](framework/img/workshop/box.png)
 
-        Processing has a bunch of variables ready for us to use, but we'll also create our own later on!
+        Processing has a bunch of variables ready for us to use, but we may also create our own later on!
 
         ---
         <div class="dropdown">
@@ -741,108 +780,6 @@
       </script>
     </section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Let's Create Our Own Variables
-
-        Our ellipsis moves with the built-in variables `mouseX` and `mouseY` but we can create our own variables to change things too!
-
-        When we create variables, they usually go at the very *tippity-top* of the code before `function setup() {` and look like this:
-
-        ```processing
-        let myVariable = 200;
-
-        function setup() {
-        ...
-        ```
-
-        Once we've created a variable, we can change the value anywhere in our code using math like this:
-
-        ```processing
-        myVariable = myVariable * 2;
-        ```        
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Let's Create Our Own Variables
-
-        Imagine I was a computer and you could control how many times I tap my nose with a variable...
-
-        ```processing
-        let taps = 0; // create a variable called "taps" and put the number 0 in it
-
-        function setup() {
-          raiseFingerToNose(); // tapping finger ready...
-        }
-
-        function draw() {
-          tapNose(taps); // tap nose "taps" times
-          taps = taps + 1; // change the number in "taps" by adding 1 to it
-        }
-
-        ```
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Make it Grow!
-
-        1. Create a new variable - it's going to make your ellipses get bigger so give it a meaningful name like `size` or `grow`. 
-
-          Remember to put it before ```function setup() {``` and it should look something like ```let myVariable = ...```
-        
-        1. Put a small number in your variable
-        
-        1. Replace the width or height (or both!) of your ellipses with the variable
-        
-        1. Change the number in your variable using math, but make sure Processing does it over and over and over...
-        
-        1. Put the small number back in your variable when a key gets pressed
-
-        Tip: You can **comment out** the conditional statement for `mouseIsPressed` to more easily see if your ellipse is growing the way you want it to
-
-        ```processing
-        // if(mouseIsPressed) {
-          fill(26, 94, 37);
-          ...
-        // }
-        ```
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Possible Solution:
-
-        ``` processing
-        let grow = 10; // Create a new variable and put the number 10 in it
-
-        function setup() {
-          createCanvas(400, 400);
-          background(145, 42, 126);
-        }
-
-        function draw() {
-          if(mouseIsPressed) {
-            fill(26, 94, 37);
-            stroke(1, 209, 229);
-            ellipse(mouseX, mouseY, grow, 100); // Use the variable to set the width
-            grow = grow + 10; // Add 10 to the number in the variable
-          }
-          
-          if(keyIsPressed) {
-            background(145, 42, 126);
-            grow = 10; // Put the number 10 in the variable
-          }
-        }
-        ```
-
-      </script>
-    </section>
-
     <section class="slide two-col-list" data-markdown>
       <script type="text/template">
         # **Coding Concept:** That's So Random!
@@ -869,20 +806,60 @@
       <script type="text/template">
         #Random Taps!
 
-        Let's try out this updated nose-tapping code:
+        Imagine I was a computer and you could control how many times I tap my nose with `tapNose()`...
 
         ```processing
-        let taps = 0;
-
         function setup() {
           raiseFingerToNose();
         }
 
         function draw() {
-          tapNose(taps);
-          taps = random(1, 11); // put a random number between 1-10 in "taps"
+          tapNose(random(1, 11)); // put a random number between 1-10 in "taps"
         }
 
+        ```
+
+        Note when we put `random(1, 11)` inside `tapNose();` we have two sets of parentheses that need to open and close
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Random Sizes and Colours
+
+        Since we can replace any number in our sketch with `random()`, let's think of ways we could use it...
+
+        What would `ellipse(mouseX, mouseY, random(101), 100);` do?
+
+        What about `fill(0, 0, random(200, 256));`?
+
+        Are there other places we can use `random()`?
+
+        *Remember to keep double-check your **parentheses** and **commas** are all in the right places!*
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Possible Solution:
+
+        ``` processing
+        function setup() {
+          createCanvas(400, 400);
+          background(145, 42, 126);
+        }
+
+        function draw() {
+          if(mouseIsPressed) {
+            fill(0, 0, random(200, 256));
+            stroke(1, 209, 229); // All of these numbers could be random
+            ellipse(mouseX, mouseY, random(101), 100); // We could replace mouseX and mouseY with random numbers
+          }
+          
+          if(keyIsPressed) {
+            background(145, 42, 126); // More numbers that could be random!
+          }
+        }
         ```
       </script>
     </section>
@@ -894,45 +871,116 @@
         * The example sketch:
           <iframe src="framework/processing-projects/project-1.html" width="500" height="500"></iframe>
         * What's different from ours?
-          * Do the ellipses grow like ours or are they random sizes?
-          * The colours change a lot too... maybe it needs more than one random number for `fill`?
+          * The way the size changes isn't quite the same 🤔
+          * The colours change a lot too... maybe it needs more than one random number in `fill()`?
         * Other things to try:
           * Set the X and Y with random numbers
           * Set the width and height with mouseX or mouseY
-          * Can you draw rectangles?
+          * Can you draw rectangles? Check the <a href="https://p5js.org/reference/#group-Shape">refererence</a> for other shapes
       </script>
     </section>
 
-  <section class="slide title" data-markdown>
-    <script type="text/template">
-      # New Sketch!
-    </script>
-  </section>
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Stretch Goal: Let's Create Our Own Variables
 
+        Our ellipsis moves with the built-in variables `mouseX` and `mouseY` but we can create our own variables to change things too!
 
-<section class="slide two-col-list" data-markdown>
-  <script type="text/template">
-    # Finding Inspiration
+        When we create variables, they usually go at the very *tippity-top* of the code before `function setup() {` and look like this:
 
-    * <iframe src="https://www.openprocessing.org/sketch/544192/embed/" width="500" height="500"></iframe>
-    * [openprocessing.org](https://www.openprocessing.org)
-      * A community site for sharing Processing sketches
-      * Plenty of sketches to see everything possible with Processing
-      * You can see their code to figure out how it works
-      * The site also has an online editor like the one we've been using
-  </script>
-</section>
+        ```processing
+        let myVariable = 200;
 
-<section class="slide two-col-list" data-markdown>
-  <script type="text/template">
-    # Can You Create Something Like This?
+        function setup() {
+        ...
+        ```
 
-    * <iframe src="framework/processing-projects/project-2.html" width="500" height="500"></iframe>
-      <a href="https://editor.p5js.org/steveclc/sketches/eH3oRzgYp">View the code for this sketch</a>
-    * In our own words, let's make a list of everything we see:
-      <textarea rows="11" cols="40" style="font-size: 0.9em;">- drawing circles</textarea>
-  </script>
-</section>
+        Once we've created a variable, we can change the value anywhere in our code using math like this:
+
+        ```processing
+        myVariable = myVariable * 2;
+        ```        
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Stretch Goal: Let's Create Our Own Variables
+
+        Imagine I was a computer and you could control how many times I tap my nose with a variable...
+
+        ```processing
+        let taps = 0; // create a variable called "taps" and put the number 0 in it
+
+        function setup() {
+          raiseFingerToNose(); // tapping finger ready...
+        }
+
+        function draw() {
+          tapNose(taps); // tap nose "taps" times
+          taps = taps + 1; // change the number in "taps" by adding 1 to it
+        }
+
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Stretch Goal: Make it Grow!
+
+        1. Create a new variable - it's going to make your ellipses get bigger so give it a meaningful name like `size` or `grow`. 
+
+          Remember to put it before ```function setup() {``` and it should look something like ```let myVariable = ...```
+        
+        1. Put a small number in your variable
+        
+        1. Replace the width or height (or both!) of your ellipses with the variable
+        
+        1. Change the number in your variable using math, but make sure Processing does it over and over and over...
+        
+        1. Put the small number back in your variable when a key gets pressed
+
+        Tip: You can **comment out** the conditional statement for `mouseIsPressed` to more easily see if your ellipse is growing the way you want it to
+
+        ```processing
+        // if(mouseIsPressed) {
+          fill(26, 94, 37);
+          ...
+        // }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Stretch Goal: Possible Solution:
+
+        ``` processing
+        let grow = 10; // Create a new variable and put the number 10 in it
+
+        function setup() {
+          createCanvas(400, 400);
+          background(145, 42, 126);
+        }
+
+        function draw() {
+          if(mouseIsPressed) {
+            fill(26, 94, 37);
+            stroke(1, 209, 229);
+            ellipse(mouseX, mouseY, grow, 100); // Use the variable to set the width
+            grow = grow + 10; // Add 10 to the number in the variable
+          }
+          
+          if(keyIsPressed) {
+            background(145, 42, 126);
+            grow = 10; // Put the number 10 in the variable
+          }
+        }
+        ```
+
+      </script>
+    </section>
 
     <section class="slide title" data-markdown>
       <script type="text/template">
